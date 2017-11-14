@@ -1,0 +1,190 @@
+/*1.General*/
+/*2.Header*/
+/*3 Pages*/
+	/*3.1. Portfolio*/
+	/*3.2. O-meni*/
+	/*3.3. Kontakt*/
+/*4. Footer*/
+/*5. Media queries*/
+
+/*1.General*/
+*{
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: Monserat, sans-serif;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+p{
+	color: #888
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	opacity: 0.8;
+	text-decoration: none;
+}
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+.clearfix {
+	clear: both;
+}
+
+
+/*2.Header*/
+header {
+	background-color: #00FA9A;
+	color: #fff;
+	padding: 20px 0 0;
+	text-align: center;
+}
+nav ul {
+	list-style: none;
+	padding: 30px 0;
+	background-color: #e74c3c;
+}
+nav ul li {
+	display: inline;
+}
+nav ul li a {
+	color: whitesmoke;
+}
+.logo {
+	margin-bottom: 0;
+	font-size: 20px;
+}
+.Titula {
+	margin-top: 0;
+	margin-bottom: 30px;
+	font-size: 16px; 
+}
+.selected {
+	text-decoration: underline;
+}
+
+
+/*3 Pages*/
+/*3.1. portfolio*/
+.main-content {
+	padding: 50px 10px;
+}
+.projekat {
+	width: 100%;
+	max-width: 600px;
+	margin: 70px auto;
+	background-color: #efefef;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 5px;
+	overflow: hidden;
+}
+.projekat img {
+	border-bottom: border: 5px solid red;
+}
+/*ne znam cemu ili mi ne radi*/
+.projekat section {
+	padding: 30px;
+}
+.projekat section h1 {
+	font-size: 18px;
+	margin: 0;
+	text-transform: uppercase;
+}
+.projekat section p {
+	font-size: 14px;
+	color: #242424;
+}
+
+/*3.2. O-meni*/
+.profile-photo {
+	max-width: 250px;
+	margin: 0 auto 30px;
+	display: block;
+	border-radius: 50%;
+
+}
+
+/*3.3. Kontakt*/
+.kontakt-info {
+	margin-bottom: 70px;
+}
+.kontakt-detalji ul {
+	list-style: none;
+	padding: 0;
+}
+.kontakt-detalji ul li {
+	margin-bottom: 10px;
+}
+.kontakt-detalji ul li span {
+	margin-right: 10px;
+}
+.span fa-envelope {
+	font-size: 10px !important;
+}
+/*nece da smanji kovertu*/
+
+/*4. Footer*/
+footer {
+	text-align: center;
+}
+footer span {
+	font-size: 20px !important;
+	color: #000;
+}
+
+/*5. Media queries*/
+@media screen and (min-width: 960px) {
+	header {
+		text-align: initial;
+		padding-left: 20px;
+		padding-right: 20px;
+		border-bottom: 3px solid #ef74c3c;
+	}
+	header h1, h2 {
+		display: inline-block;
+	}
+	nav {
+		float: right;
+	}
+	nav ul {
+		background-color: transparent;
+		margin-top: 0px;
+		padding-top: 14px;
+	}
+	.projekat {
+		width: 32%;
+		display: inline-block;
+	}
+	.projekat:nth-child(3n+2){
+		margin-left: 1.4%;
+		margin-right: 1.5%;
+	}
+	.projekat h1 {
+		font-size: 25px !important;
+	}
+	.projekat p {
+		font-size: 16px !important;
+	}
+	.profile-photo {
+		margin: 0 60px 60px 0;
+		float: left;
+	}
+	.kontakt-info {
+		width: 69%;
+	}
+	.kontakt-detalji {
+		width: 30%;
+		padding-left: 10%;
+		vertical-align: top;
+	}
+	.kontakt-info,
+	.kontakt-detalji {
+		display: inline-block;
+	}
+}
